@@ -10,7 +10,7 @@ const optionsDiv = document.getElementById("options");
 const feedback = document.getElementById("feedback");
 const nextBtn = document.getElementById("nextBtn");
 
-fetch("questions.json")
+fetch("data/questions.json")
   .then(response => response.json())
   .then(data => {
     questions = data;
