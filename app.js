@@ -16,7 +16,7 @@ fetch("data/questions.json")
   .then(data => {
     questions = data;
     loadTopics();
-  });
+});
 
 function loadTopics() {
   const topics = [...new Set(questions.map(q => q.topic))];

@@ -1,28 +1,222 @@
 [
     {
-        "id": "Q1",
-        "topic": "Continuous Integration",
-        "question": "What is the primary goal of Continuous Integration?",
-        "options": [
+      "id": "Q1",
+      "topic": "Continuous Integration",
+      "question": "What is the primary goal of Continuous Integration?",
+      "options": [
         "Automatically deploy to production",
         "Frequently integrate code changes into a shared repository",
         "Eliminate the need for testing",
         "Remove the need for branches"
-        ],
-        "answerIndex": 1,
-        "explanation": "Continuous Integration aims to detect integration issues early."
+      ],
+      "answerIndex": 1,
+      "explanation": "Continuous Integration focuses on early detection of integration issues."
     },
     {
-        "id": "Q2",
-        "topic": "Containers",
-        "question": "What is a container?",
-        "options": [
-        "A virtual machine",
-        "A lightweight isolated environment for applications",
-        "A physical server",
-        "A cloud storage service"
-        ],
-        "answerIndex": 1,
-        "explanation": "Containers package applications and their dependencies into isolated environments."
+      "id": "Q2",
+      "topic": "Continuous Integration",
+      "question": "Which tool is commonly used for CI pipelines?",
+      "options": ["Docker", "Jenkins", "Kubernetes", "Terraform"],
+      "answerIndex": 1,
+      "explanation": "Jenkins is a widely used CI automation server."
+    },
+    {
+      "id": "Q3",
+      "topic": "Continuous Integration",
+      "question": "What triggers a typical CI pipeline?",
+      "options": ["Server reboot", "Code commit", "Manual approval", "Production outage"],
+      "answerIndex": 1,
+      "explanation": "CI pipelines are usually triggered by code commits."
+    },
+    {
+      "id": "Q4",
+      "topic": "Continuous Integration",
+      "question": "Which practice helps keep CI pipelines fast?",
+      "options": ["Large commits", "Long-lived branches", "Parallel testing", "Manual builds"],
+      "answerIndex": 2,
+      "explanation": "Parallel testing reduces pipeline execution time."
+    },
+    {
+      "id": "Q5",
+      "topic": "Continuous Integration",
+      "question": "What should always run in a CI pipeline?",
+      "options": ["Load tests", "Unit tests", "Chaos tests", "Manual reviews"],
+      "answerIndex": 1,
+      "explanation": "Unit tests validate code changes quickly and reliably."
+    },
+    {
+      "id": "Q6",
+      "topic": "Continuous Delivery & Deployment",
+      "question": "What distinguishes Continuous Deployment from Continuous Delivery?",
+      "options": [
+        "Deployment requires manual approval",
+        "Delivery deploys automatically",
+        "They are the same",
+        "Deployment skips testing"
+      ],
+      "answerIndex": 0,
+      "explanation": "Continuous Delivery requires manual approval before production deployment."
+    },
+    {
+      "id": "Q7",
+      "topic": "Continuous Delivery & Deployment",
+      "question": "What is a deployment pipeline?",
+      "options": [
+        "A monitoring tool",
+        "A sequence of automated steps to release software",
+        "A version control branch",
+        "A container registry"
+      ],
+      "answerIndex": 1,
+      "explanation": "Deployment pipelines automate the release process."
+    },
+    {
+      "id": "Q8",
+      "topic": "Continuous Delivery & Deployment",
+      "question": "Blue-green deployments reduce risk by:",
+      "options": [
+        "Using multiple databases",
+        "Deploying to staging only",
+        "Switching traffic between two environments",
+        "Rolling back manually"
+      ],
+      "answerIndex": 2,
+      "explanation": "Traffic is switched between blue and green environments."
+    },
+    {
+      "id": "Q9",
+      "topic": "Continuous Delivery & Deployment",
+      "question": "What is a canary release?",
+      "options": [
+        "Full production deployment",
+        "Testing in development",
+        "Releasing to a small subset of users",
+        "Rolling back immediately"
+      ],
+      "answerIndex": 2,
+      "explanation": "Canary releases limit exposure by targeting few users."
+    },
+    {
+      "id": "Q10",
+      "topic": "Continuous Delivery & Deployment",
+      "question": "Which metric is most important during deployment?",
+      "options": ["CPU usage", "Error rate", "Disk space", "Build time"],
+      "answerIndex": 1,
+      "explanation": "Error rate quickly shows deployment issues."
+    },
+    {
+      "id": "Q11",
+      "topic": "Infrastructure as Code",
+      "question": "What is Infrastructure as Code?",
+      "options": [
+        "Manual server configuration",
+        "Managing infrastructure using code",
+        "Writing application logic",
+        "Monitoring infrastructure"
+      ],
+      "answerIndex": 1,
+      "explanation": "IaC treats infrastructure provisioning as software."
+    },
+    {
+      "id": "Q12",
+      "topic": "Infrastructure as Code",
+      "question": "Which tool is commonly used for IaC?",
+      "options": ["Ansible", "Docker", "Prometheus", "Grafana"],
+      "answerIndex": 0,
+      "explanation": "Ansible is a popular IaC and configuration tool."
+    },
+    {
+      "id": "Q13",
+      "topic": "Infrastructure as Code",
+      "question": "What is idempotency in IaC?",
+      "options": [
+        "Running code only once",
+        "Same result no matter how many times it runs",
+        "Automatic rollback",
+        "Manual approval"
+      ],
+      "answerIndex": 1,
+      "explanation": "Idempotent operations always reach the same state."
+    },
+    {
+      "id": "Q14",
+      "topic": "Infrastructure as Code",
+      "question": "Why version control IaC files?",
+      "options": [
+        "For faster builds",
+        "To track changes and rollback",
+        "To reduce costs",
+        "To monitor systems"
+      ],
+      "answerIndex": 1,
+      "explanation": "Version control provides traceability and rollback."
+    },
+    {
+      "id": "Q15",
+      "topic": "Infrastructure as Code",
+      "question": "What is Terraform mainly used for?",
+      "options": [
+        "Application monitoring",
+        "Infrastructure provisioning",
+        "Log aggregation",
+        "CI pipelines"
+      ],
+      "answerIndex": 1,
+      "explanation": "Terraform provisions cloud infrastructure declaratively."
+    },
+    {
+      "id": "Q16",
+      "topic": "Monitoring & Reliability",
+      "question": "What is monitoring in DevOps?",
+      "options": [
+        "Tracking code commits",
+        "Observing system health and performance",
+        "Deploying applications",
+        "Writing infrastructure code"
+      ],
+      "answerIndex": 1,
+      "explanation": "Monitoring ensures systems run reliably."
+    },
+    {
+      "id": "Q17",
+      "topic": "Monitoring & Reliability",
+      "question": "Which metric reflects system availability?",
+      "options": ["Latency", "Uptime", "CPU usage", "Memory"],
+      "answerIndex": 1,
+      "explanation": "Uptime indicates service availability."
+    },
+    {
+      "id": "Q18",
+      "topic": "Monitoring & Reliability",
+      "question": "What is an SLA?",
+      "options": [
+        "System Load Average",
+        "Service Level Agreement",
+        "Software License Authorization",
+        "Scalable Load Architecture"
+      ],
+      "answerIndex": 1,
+      "explanation": "SLAs define service reliability commitments."
+    },
+    {
+      "id": "Q19",
+      "topic": "Monitoring & Reliability",
+      "question": "Which tool is commonly used for metrics collection?",
+      "options": ["Prometheus", "Git", "Terraform", "Jenkins"],
+      "answerIndex": 0,
+      "explanation": "Prometheus specializes in metrics collection."
+    },
+    {
+      "id": "Q20",
+      "topic": "Monitoring & Reliability",
+      "question": "What is the goal of alerting?",
+      "options": [
+        "Generate logs",
+        "Notify teams of issues",
+        "Scale infrastructure",
+        "Deploy fixes"
+      ],
+      "answerIndex": 1,
+      "explanation": "Alerting ensures quick response to problems."
     }
-]
+  ]
