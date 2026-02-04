@@ -10,12 +10,13 @@ const optionsDiv = document.getElementById("options");
 const feedback = document.getElementById("feedback");
 const nextBtn = document.getElementById("nextBtn");
 
+// comment
 fetch("data/questions.json")
   .then(response => response.json())
   .then(data => {
     questions = data;
     loadTopics();
-  });
+});
 
 function loadTopics() {
   const topics = [...new Set(questions.map(q => q.topic))];
